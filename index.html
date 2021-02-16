@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link id="change-theme" rel="stylesheet" href="css/purple-theme.css">
+    <title>Palmeri Samuele</title>
+</head>
+
+<body>
+    <div class="container-fluid navigation-section">
+        <div class="container inside-page">
+
+            <section class="container-fluid top-section">
+                <div class="lang-bubble-en">
+                    <a class="lang-en" href="index.html">en</a>
+                </div>
+
+                <div class="lang-bubble-fr">
+                    <a class="lang-fr" href="index-fr.html"> fr</a>
+                </div>
+                <div class="theme-box">
+                    <button data-mode="light" class="theme-bubble light"></button>
+                    <button data-mode="dark" class="theme-bubble dark"></button>
+                </div>
+
+            </section>
+
+            <section class="container aboutme-section">
+                <img class="col-xs-12 img-bubble" src="images/main-img.jpg" alt="">
+                <input class="col-xs-12 resume-btn" type="button" value="my resume"
+                    onclick="window.open('other/CuriculumVitae.pdf')" />
+                <h4 id="home">About me</h4>
+                <p class="col-xs-12  aboutme-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta
+                    minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda
+                    officia quibusdam deleniti eos cupiditate dolore doloribus!</p>
+
+            </section>
+
+            <section class="container skills-section">
+                <h4>My skills</h4>
+                <ul class="skills-list">
+                    <li>HTML/CSS</li>
+                    <li>javascript</li>
+                    <li>Sass</li>
+                    <li>Bootstrap</li>
+                    <li>Excel</li>
+                    <li>Word</li>
+                    <li>Figma/Photoshop</li>
+                    <li>Balsamiq</li>
+                </ul>
+                <div class="learning-box">
+                    <h5>Learning :</h5>
+                    <ul class="learning-skills-list">
+                        <li>jquery</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                    </ul>
+                </div>
+
+            </section>
+
+
+            <section class="projects-section">
+                <h4 id="projects">My projects</h4>
+                <a class="project-card" target="_blank" href="../SteffanyWebSite/index.html">
+                    <div>
+                        <img class="picture-project" src="../SteffanyWebSite/img/projet1-photo.png" alt="">
+                        <p class="projects-p"> Website made for a newborns and family photographer</p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#" target="_blank">
+                    <div>
+                        <img class="picture-project" src="images/project2-test.png" alt="">
+                        <p class="projects-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </a>
+
+                <a class="project-card" href="#" target="_blank">
+                    <div>
+                        <img class="picture-project" src="images/project3-test.png" alt="">
+                        <p class="projects-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </a>
+
+                <a class="project-card2" href="#" target="_blank">
+                    <div>
+                        <img class="picture-project" src="images/project1-test.png" alt="">
+                        <p class="projects-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </a>
+
+                <a class="project-card2" href="#" target="_blank">
+                    <div>
+                        <img class="picture-project" src="images/project2-test.png" alt="">
+                        <p class="projects-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </a>
+
+                <a class="project-card2" href="#" target="_blank">
+                    <div>
+                        <img class="picture-project" src="images/project3-test.png" alt="">
+                        <p class="projects-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>
+                </a>
+            </section>
+
+            <section class="container contact-section">
+                <h4 id="contact">Contact me </h4>
+                <div class="form-container">
+                    <form class="contact-form">
+                        <input type="text" name="nom" class="contact-box nom" placeholder="First name" required />
+                        <input type="text" name="prenom" class="contact-box prenom" placeholder="Last name" required />
+                        <input type="email" name="email" class="contact-box email" placeholder="Email" required />
+                        <input type="text" name="subject" class="contact-box subject" placeholder="Subject" required />
+                        <textarea class="contact-box description" name="description" cols="47" rows="20"
+                            placeholder="Your message" required></textarea>
+                        <input class="contact-box submit-btn" type="submit" value="Send" />
+                    </form>
+                </div>
+            </section>
+
+        </div>
+        <!--
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        -->
+    </div>
+    <!--
+    <footer>
+        <p>Copyright Plameri</p>
+    </footer>
+    -->
+    <script type="text/javascript" src="js/animation.js"></script>
+</body>
+
+</html>

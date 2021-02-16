@@ -1,0 +1,406 @@
+:root {
+  --background-color: #827081;
+  --text-color: #495159;
+  --section-color: #e3d0d8;
+  --inside-page-color: #aea3b0;
+  --text-size: 1.6rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  background-color: var(--background-color);
+  background-repeat: no-repeat;
+}
+:hover {
+  transition: all 0.2s ease;
+}
+
+/* ------------------------------------------------------------------------INSIDE PAGE------------------------------------------------------------*/
+
+.inside-page {
+  background-color: var(--inside-page-color);
+  position: relative;
+  width: 104.9rem;
+  height: 220rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9rem;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-rows: 50px 1fr 1fr 1fr 1.5fr ;
+  border-radius: 16px;
+}
+/* ------------------------------------------------------------------------MISE EN COMMUN------------------------------------------------------------*/
+
+.aboutme-section, .projects-section, .contact-section, .skills-section {
+    background-color: var(--section-color);
+    border-radius: 16px;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.25);
+}
+
+.aboutme-section h4, .projects-section h4, .contact-section h4, .skills-section h4 {
+  font-family: Passion One;
+  font-size: 4rem;
+  line-height: 5.3rem;
+  color: #495159;
+  text-align: center;
+  border-radius: 16px;
+}
+
+
+/* ------------------------------------------------------------------------NAVIGATION SECTION------------------------------------------------------------*/
+/*
+.navigation-section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+nav {
+  width: 59rem;
+  height: 6.9rem;
+  /*margin-top: 20rem;
+  position: fixed;
+  background: #F1E3E4;
+  border-radius: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+nav a {
+  text-decoration: none;
+  font-family: Passion One, sans-serif;
+  font-size: 3.6rem;
+  line-height: 3.6rem;
+  color: #495159;
+  justify-self: center;
+
+}
+nav:hover {
+  transform: perspective(500px) translateZ(10px);
+}
+
+*/
+
+
+/* ------------------------------------------------------------------------TOP SECTION------------------------------------------------------------*/
+
+.lang-en, .lang-fr {
+  color: var(--text-color);
+  text-decoration: none;
+  
+}
+
+
+.top-section {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.lang-bubble-en, .lang-bubble-fr {
+  border: 2px solid var(--text-color);
+  border-radius: 100%;
+  width: 3rem;
+  height: 3rem;
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+  justify-content: center;
+  background: var(--text-color);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.lang-bubble-en a, .lang-bubble-fr a {
+  color: #e3d0d8;
+  font-size: var(--text-size);
+  font-weight: bolder;
+}
+.lang-bubble-en a:hover, .lang-bubble-fr a:hover {
+  color: var(--text-color);
+  ;
+}
+
+.lang-bubble-fr {
+  margin-left: 4rem;
+}
+.top-section{
+  position : relative;
+}
+.top-section button {
+  grid-column: 2;
+  grid-row: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+}
+.theme-box {
+  position: absolute;
+  right: 5px;
+}
+.light {
+  background-color: #e2cfc4 ;
+}
+.dark {
+  margin-left: 1rem;
+  background-color: #827081;
+
+}
+.dark:hover {
+  border: 2px solid white;
+}
+.light:hover {
+  border: 2px solid black;
+}
+
+
+.dark:focus , .light:focus {
+  outline: none;
+}
+
+
+/* ------------------------------------------------------------------------ABOUT ME SECTION------------------------------------------------------------*/
+
+.aboutme-section {
+  width: 77.8rem;
+  height: 39rem;
+  top: 9rem;
+  display: grid;
+  grid-template-rows: 5%, 1fr;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 1px 2px 20px rgba(0, 0, 0, 0.25);
+  grid-row: 2;
+}
+.aboutme-section h4 {
+  grid-row: 1;
+  grid-column: 2;
+  align-self: start;
+}
+
+
+.img-bubble {
+  overflow: hidden;
+  -webkit-border-radius:50px;
+  -moz-border-radius:50px;
+  border-radius:100%;
+  border: 1px solid white;
+  width: 300px;
+  height:275px;
+  grid-row: 1/1;
+  grid-column: 1;
+  margin-top: 2.4rem;
+  justify-self: center;
+}
+
+
+.aboutme-p {
+  align-self: center;
+  font-family: 'Baloo 2', cursive;
+  color: #495159;
+  grid-row: 1;
+  grid-column: 2;
+  font-size: var(--text-size);
+
+}
+
+.resume-btn {
+  height: 3.5rem;
+  width: 10rem;
+  background-color: var(--text-color);
+  color: white;
+  justify-self: center;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: 1px solid grey;
+  font-family: 'Baloo 2', cursive;
+  cursor:pointer;
+}
+
+.resume-btn:hover{
+  border: none;
+  background-color: #b5838d;
+  transition: all 0.2s ease;
+  border-radius: 50px;
+  color: white;
+  height: 3.5rem;
+  width: 11rem;
+}
+
+
+
+/* ------------------------------------------------------------------------CONTACT SECTION------------------------------------------------------------*/
+
+.contact-section {
+  width: 60rem;
+  height: 60rem;
+  grid-row: 5;
+}
+
+.nom,  .prenom, .email, .subject{
+  width: 200px;
+  color: var(--text-color);
+}
+
+
+.form-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+.contact-box {
+  display: block;
+  margin-top: 2rem;
+  border: 1px solid grey;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.contact-box:hover {
+  transform: perspective(500px) translateZ(3px);
+
+}
+
+.submit-btn {
+  height: 3.5rem;
+  width: 6.5rem;
+  background-color: var(--text-color);
+  color: white;
+  margin-left:auto;
+  margin-right: auto;
+  outline: none;
+  border: 1px solid grey;
+  font-family: 'Baloo 2', cursive;
+  cursor:pointer;
+}
+
+.submit-btn:focus {
+  outline: none;
+}
+.submit-btn:hover{
+  background-color: #b5838d;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  color: white;
+  height: 3.5rem;
+  width: 7.5rem;
+  border: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus , .contact-form button:focus{
+  outline: none;
+}
+
+/* ------------------------------------------------------------------------PROJECTS SECTION------------------------------------------------------------*/
+
+.projects-section {
+  width: 93rem;
+  height: 60rem;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 10% 1fr 1fr;
+  grid-row: 4;
+}
+.picture-project {
+  width: 300px;
+  height: 160px;
+}
+
+
+.project-card, .project-card2 {
+  background-color: white;
+  border-radius: 16px;
+  overflow: hidden;
+  justify-self: center;
+  align-self: center;
+  width: 280px;
+  position: relative;
+  text-decoration: none;
+}
+
+.project-card2 {
+  grid-row: 3;
+}
+
+.project-card {
+  grid-row :2;
+}
+.projects-section h4 {
+  grid-column: 2;
+}
+
+.projects-p {
+  font-size: var(--text-size);
+  text-align: center;
+  font-family: 'Baloo 2', cursive;
+  color: var(--text-color);
+
+}
+
+.project-card:hover, .project-card2:hover {
+  transform: perspective(500px) translateZ(20px);
+}
+/* ------------------------------------------------------------------------PROJECTS SECTION------------------------------------------------------------*/
+
+.skills-section {
+  width: 60%;
+  height: 75%;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 30% 1fr;
+  grid-template-rows: 15% 1fr;
+  position: relative;
+}
+.skills-section h4 {
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.skills-list {
+  grid-column: 1;
+  justify-self: end;
+
+}
+
+.learning-skills-list {
+  justify-self: center;
+  align-self: center;
+}
+.skills-list li, .learning-skills-list li {
+  font-size: var(--text-size);
+  padding: 5.5px;
+  font-family: 'Baloo 2', sans-serif;
+  color: var(--text-color);
+}
+
+.learning-box h5 {
+  font-size: 2.4rem;
+  font-family: 'Baloo 2', sans-serif;
+  color: var(--text-color);
+}
+
+.learning-box {
+  justify-self: start;
+  grid-column: 3;
+}
